@@ -1,0 +1,103 @@
+.facilities{
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+}
+
+.container{
+    width: 1000px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 125px;
+    margin-top: 25px;
+}
+
+.card, .card1, .card2, .card3{
+    position: relative;
+    
+    width: 290px;
+    height: 370px;
+    
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+}
+
+.card .imgbox, .card1 .imgbox, .card2 .imgbox, .card3 .imgbox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96%;
+}
+
+.card .imgbox img, .card1 .imgbox img, .card2 .imgbox img, .card3 .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .cont, .card1 .cont, .card2 .cont, .card3 .cont{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    background: #dc335a;
+    color: #fff;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 90px;
+}
+
+.card:hover .cont, .card1:hover .cont, .card2:hover .cont, .card3:hover .cont{
+    width: 100%;
+    height: 75%;
+    left: 0;
+    bottom: 0;
+}
+
+.cont p{
+    margin: 10px 0 0;
+    padding: 0.4em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    opacity: 0;
+}
+
+.card:hover .cont p, .card1:hover .cont p, .card2:hover .cont p, .card3:hover .cont p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.cont h2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card:hover, .card1:hover, .card2:hover, .card3:hover{
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.4);
+}
+
+.card1, .card2, .card3{
+    margin-top: 25px;
+}
+
+.pa{
+    text-align: center;
+    margin: 20px 0;
+    opacity: .7;
+    width: 65%;
+    font-size: 17px;
+    margin-bottom: 45px;
+    justify-content:space-between;
+    margin-left: 190px;
+}
